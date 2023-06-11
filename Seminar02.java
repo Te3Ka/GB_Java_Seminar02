@@ -1,5 +1,6 @@
 package GB_Java_Seminar02;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Seminar02 {
@@ -30,5 +31,15 @@ public class Seminar02 {
         String secondStringBuilder = stringBuilderTwo.reverse().toString();
         System.out.println("Strings " + (firstStringBuilder.equals(secondStringBuilder)
                 ? "equals reverse" : "not equals reverse"));
+
+
+        //Задание 3
+        // Преобразовать строку "34 + 2.66 = " в числовой вариант и решить пример.
+        String primer = "34 + 2.66 = ";
+        String[] primers = primer.split(" ");
+        double num1 = Double.valueOf(primers[0]);
+        double num2 = Double.valueOf(primers[2]);
+        if (primers[1].equals("+"))
+            System.out.println(primer + "" + (num1 + num2));
     }
 }
