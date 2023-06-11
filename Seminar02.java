@@ -35,7 +35,7 @@ public class Seminar02 {
 
         //Задание 3
         // Преобразовать строку "34 + 2.66 = " в числовой вариант и решить пример.
-        String primer = "34 + 2.66 = ";
+        String primer = ".34 + 2.66 = ";
         String[] primers = primer.split(" ");
         double num1 = Double.valueOf(primers[0]);
         double num2 = Double.valueOf(primers[2]);
